@@ -4,167 +4,167 @@
     padding: 0 10px;
     /* margin: auto; */
     background-color: white;
-}
-
-body {
+  }
+  
+  body {
     background-color: #f7efef;
-}
-
-.text-center {
-    text-align: center
-}
-
-#myForm {
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  #myForm {
     padding: 15px 10px;
-
-}
-
-label {
+  }
+  
+  label {
     display: block;
-}
-
-#name,
-#email,
-#password,
-#phone,
-#description,
-#date,
-#address {
+  }
+  
+  #name,
+  #email,
+  #password,
+  #phone,
+  #description,
+  #date,
+  #address {
     width: 100%;
     border: 1px solid #ccc;
     padding: 10px 15px;
     border-radius: 4px;
     position: relative;
-}
-
-h1 {
+  }
+  
+  h1 {
     margin: 0;
-}
-
-input[type="radio"] {
+  }
+  
+  input[type="radio"] {
     width: 20px;
     height: 20px;
-}
-
-input:focus-within,
-select:focus-within,
-textarea:focus-within {
+  }
+  
+  input:focus-within,
+  select:focus-within,
+  textarea:focus-within {
     outline: 0.5px solid #d1cbcb;
-}
-
-* {
+  }
+  
+  * {
     box-sizing: border-box;
-}
-
-label {
+  }
+  
+  label {
     margin: 10px 0;
     font-weight: 600;
     font-size: 17px;
     color: #333;
-}
-
-.d-flex {
+  }
+  
+  .d-flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.item-radio input {
+  }
+  
+  .item-radio input {
     position: relative;
     top: 5px;
     right: 3px;
-}
-
-input[type="radio"]:focus-within,
-input[type="checkbox"]:focus-within {
+  }
+  
+  input[type="radio"]:focus-within,
+  input[type="checkbox"]:focus-within {
     outline: 0px;
-}
-
-input[type="checkbox"] {
+  }
+  
+  input[type="checkbox"] {
     width: 15px;
     height: 15px;
-    margin: 0 5px
-}
-
-.my-2 {
+    margin: 0 5px;
+  }
+  
+  .my-2 {
     margin: 10px 0;
-}
-
-.btn button {
+  }
+  
+  .btn button {
     padding: 10px 25px;
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
     background-color: rgb(116, 177, 116);
-}
-#btn-submit:hover{
+  }
+  #btn-submit:hover {
     background-color: green;
     color: #fff;
-}
-#btnUpdate:hover:enabled {
+  }
+  #btnUpdate:hover:enabled {
     background-color: rgb(29, 105, 29);
     color: #fff;
-}
-.my-3 {
+  }
+  .my-3 {
     margin: 15px 0;
-}
-
-option {
+  }
+  
+  option {
     font-size: 15px;
-}
-
-table,
-th,
-td {
+  }
+  
+  table,
+  th,
+  td {
     border: 1px solid #afa4a4;
     border-collapse: collapse;
     text-align: center;
-}
-
-table {
-    margin: 30px 0 0 0
-}
-
-.errclass:focus-within {
+  }
+  
+  table {
+    margin: 30px 0 0 0;
+  }
+  
+  .errclass:focus-within {
     border: 1px solid red !important;
-}
-
-.myFormInput {
+  }
+  
+  .myFormInput {
     position: relative;
-}
-
-.err {
+  }
+  
+  .err {
     position: absolute;
     top: 20%;
     left: 30%;
     z-index: 222;
     color: #e40f0f;
-}
-
-th {
+  }
+  
+  th {
     width: 130px;
-}
-
-.btn-remove,
-.btn-edit {
+  }
+  
+  .btn-remove,
+  .btn-edit {
     border: 1px solid #ccc;
     cursor: pointer;
     padding: 5px 10px;
     margin: 5px 10px;
     border-radius: 5px;
-}
-
-.btn-remove {
+  }
+  
+  .btn-remove {
     background-color: rgb(235, 36, 95);
-}
-
-.btn-edit {
+  }
+  
+  .btn-edit {
     background-color: rgb(115, 115, 212);
-}
-.color-red{
-    color:red
-}
-textarea{
+  }
+  .color-red {
+    color: red;
+  }
+  textarea {
     max-width: 100%;
     max-height: 150px;
-}
+  }
+  
