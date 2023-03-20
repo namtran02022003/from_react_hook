@@ -1,0 +1,170 @@
+.container {
+    border: 1px solid #b9b7b7;
+    max-width: 450px;
+    padding: 0 10px;
+    /* margin: auto; */
+    background-color: white;
+}
+
+body {
+    background-color: #f7efef;
+}
+
+.text-center {
+    text-align: center
+}
+
+#myForm {
+    padding: 15px 10px;
+
+}
+
+label {
+    display: block;
+}
+
+#name,
+#email,
+#password,
+#phone,
+#description,
+#date,
+#address {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 4px;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+input:focus-within,
+select:focus-within,
+textarea:focus-within {
+    outline: 0.5px solid #d1cbcb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+label {
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 17px;
+    color: #333;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item-radio input {
+    position: relative;
+    top: 5px;
+    right: 3px;
+}
+
+input[type="radio"]:focus-within,
+input[type="checkbox"]:focus-within {
+    outline: 0px;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px
+}
+
+.my-2 {
+    margin: 10px 0;
+}
+
+.btn button {
+    padding: 10px 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(116, 177, 116);
+}
+#btn-submit:hover{
+    background-color: green;
+    color: #fff;
+}
+#btnUpdate:hover:enabled {
+    background-color: rgb(29, 105, 29);
+    color: #fff;
+}
+.my-3 {
+    margin: 15px 0;
+}
+
+option {
+    font-size: 15px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #afa4a4;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table {
+    margin: 30px 0 0 0
+}
+
+.errclass:focus-within {
+    border: 1px solid red !important;
+}
+
+.myFormInput {
+    position: relative;
+}
+
+.err {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 222;
+    color: #e40f0f;
+}
+
+th {
+    width: 130px;
+}
+
+.btn-remove,
+.btn-edit {
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn-remove {
+    background-color: rgb(235, 36, 95);
+}
+
+.btn-edit {
+    background-color: rgb(115, 115, 212);
+}
+.color-red{
+    color:red
+}
+textarea{
+    max-width: 100%;
+    max-height: 150px;
+}
