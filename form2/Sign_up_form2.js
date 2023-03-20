@@ -89,7 +89,7 @@
     }
     function renderUsers() {
       let dataLocalStorage = JSON.parse(localStorage.getItem("listUsers"));
-      if (dataLocalStorage.length > 0) {
+      if (dataLocalStorage && dataLocalStorage.length > 0) {
         let itemchildren = Object.keys(dataLocalStorage[0]);
         let th = itemchildren.map((item) => `<th>${item}</th>`);
         let td = dataLocalStorage.map((user) => {

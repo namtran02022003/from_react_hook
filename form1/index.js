@@ -32,7 +32,7 @@ function renderDatas() {
       }
     });
   });
-  
+  const errMessage = (element,mes)=> {element.parentElement.querySelector('.err').innerHTML = mes; element.focus()}
   function HandleSubmit(type, id) {
     var datas = {};
     var listDateElement = Array.from(dataForm);
@@ -53,21 +53,15 @@ function renderDatas() {
           ) {
             datas[element.getAttribute("id")] = element.value;
           } else {
-            element.focus();
-            element.parentElement.querySelector(".err").innerHTML =
-              "Phone number không hợp lệ";
+            errMessage(element,"Phone number không hợp lệ")
             return;
           }
         } else {
           if (element.value.trim().length > 20) {
-            element.focus();
-            element.parentElement.querySelector(".err").innerHTML =
-              "Vui lòng chỉ nhập tối đa 20 ký tự";
+            errMessage(element,"Vui lòng chỉ nhập tối đa 20 ký tự")
             return;
           } else if (element.value.trim().length < 6) {
-            element.focus();
-            element.parentElement.querySelector(".err").innerHTML =
-              "Vui lòng nhập tối thiểu 6 ký tự!";
+            errMessage(element,"Vui lòng nhập tối thiểu 6 ký tự!")
             return;
           }
           datas[element.getAttribute("id")] = element.value;
@@ -78,15 +72,11 @@ function renderDatas() {
       }
       if (element.type == "password") {
         if (element.value.trim().length > 20) {
-          element.focus();
-          element.parentElement.querySelector(".err").innerHTML =
-            "Vui lòng nhập tối đa 20 ký tự";
+          errMessage(element,"Vui lòng nhập tối đa 20 ký tự")            
           return;
         }
         if (element.value.trim().length < 6) {
-          element.focus();
-          element.parentElement.querySelector(".err").innerHTML =
-            "Vui lòng nhập tối thiểu 6 ký tự!";
+          errMessage(element,"Vui lòng nhập tối thiểu 6 ký tự")
           return;
         }
         datas[element.getAttribute("id")] = element.value;
@@ -95,9 +85,7 @@ function renderDatas() {
         if (element.value) {
           datas[element.getAttribute("id")] = element.value;
         } else {
-          element.focus();
-          element.parentElement.querySelector(".err").innerHTML =
-            "Vui lòng nhập trường này!";
+          errMessage(element,"Vui lòng nhập trường này!")
           return;
         }
       }
@@ -105,9 +93,7 @@ function renderDatas() {
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(element.value)) {
           datas[element.getAttribute("id")] = element.value;
         } else {
-          element.focus();
-          element.parentElement.querySelector(".err").innerHTML =
-            "Email không hợp lệ!";
+          errMessage(element,"Email không hợp lệ!")
           return;
         }
       }
@@ -115,9 +101,7 @@ function renderDatas() {
         if (element.value) {
           datas[element.getAttribute("id")] = element.value;
         } else {
-          element.focus();
-          element.parentElement.querySelector(".err").innerHTML =
-            "Vui lòng nhập trường này!";
+          errMessage(element,"Vui lòng nhập trường này!")
           return;
         }
       }
